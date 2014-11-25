@@ -17,6 +17,14 @@ class ViewController: UIViewController {
     
     var titleLabel: UILabel!
     
+    //Info Labels 
+    var creditsLabel: UILabel!
+    var betLabel: UILabel!
+    var winnersPaidLabel: UILabel!
+    var creditsTitleLabel: UILabel!
+    var betTitleLabel: UILabel!
+    var winnersPaidTitleLabel: UILabel!
+    
     let kMarginForView:CGFloat = 10.0
     let kMarginForSlot:CGFloat = 2.0
     let kSixth:CGFloat = 1.0/6.0
@@ -81,5 +89,27 @@ class ViewController: UIViewController {
             }
         }
     }
+    
+    func setupThirdContainer(containterView: UIView){
+        creditsLabel = UILabel()
+        creditsLabel.text = "000000"
+        creditsLabel.textColor = UIColor.whiteColor()
+        creditsLabel.font = UIFont(name: "HelveticaNeue-Light", size: 16)
+        creditsLabel.sizeToFit()
+        creditsLabel.center = CGPoint(x: containterView.frame.width * kSixth, y: containterView.frame.height * kThird)
+        creditsLabel.textAlignment = NSTextAlignment.Center
+        creditsLabel.backgroundColor = UIColor.darkGrayColor()
+        containterView.addSubview(creditsLabel)
+        
+        
+    }
+    
+    
+    
+    
+    
+    
+    
+    
 }
 
