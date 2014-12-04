@@ -33,6 +33,11 @@ class ViewController: UIViewController {
     
     var slots:[[Slot]] = []
     
+    //Stats
+    var credits: Int = 0
+    var currentBet: Int = 0
+    var winnings: Int = 0
+    
     let kMarginForView:CGFloat = 10.0
     let kMarginForSlot:CGFloat = 2.0
     
@@ -49,9 +54,9 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         setupContainerViews()
         setupFirstContainer(firstContainer)
-        setupSecondContainter(secondContainer)
         setupThirdContainer(thirdContainer)
         setupForthContainer(fourthContainer)
+        hardReset() //Sets up secondContainer also
         
     }
 
@@ -64,6 +69,7 @@ class ViewController: UIViewController {
     
     func resetButtonPressed (button: UIButton){
         println("Reset Button Pressed")
+        hardReset()
     }
     
     func betOneButtonPressed (button: UIButton) {
@@ -76,6 +82,7 @@ class ViewController: UIViewController {
     
     func spinButtonPressed (button: UIButton) {
         println("Spin Button Pressed")
+        removeSlotImageViews()
         slots = Factory.createSlots()
         setupSecondContainter(secondContainer)
         
@@ -237,19 +244,34 @@ class ViewController: UIViewController {
         
     }
     
+    func removeSlotImageViews() {
+        if self.secondContainer != nil {
+            let container: UIView? = self.secondContainer
+            let subViews:Array? = container!.subviews
+            for view in subViews! {
+                view.removeFromSuperview()
+            }
+            
+        }
+    }
+    
+    
+    func hardReset() {
+        removeSlotImageViews()
+        slots.removeAll(keepCapacity: true)
+        self.setupSecondContainter(secondContainer)
+        credits = 50
+        winnings = 0
+        currentBet = 0
+        
+    }
     
     
     
     
     
     
-    
-    
-    
-    
-    
-    
-    
+
     
 }
 
