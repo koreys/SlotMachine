@@ -15,6 +15,7 @@
 		9C5C176E1A2418F300063534 /* SlotMachineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5C176D1A2418F300063534 /* SlotMachineTests.swift */; };
 		9C937BE31A2FAE3500886DD0 /* Slot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C937BE21A2FAE3500886DD0 /* Slot.swift */; };
 		9C937BE51A2FAF3A00886DD0 /* Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C937BE41A2FAF3A00886DD0 /* Factory.swift */; };
+		9CD107451A32971800DCD094 /* SlotBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CD107441A32971800DCD094 /* SlotBrain.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		9C5C176D1A2418F300063534 /* SlotMachineTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlotMachineTests.swift; sourceTree = "<group>"; };
 		9C937BE21A2FAE3500886DD0 /* Slot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Slot.swift; sourceTree = "<group>"; };
 		9C937BE41A2FAF3A00886DD0 /* Factory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Factory.swift; sourceTree = "<group>"; };
+		9CD107441A32971800DCD094 /* SlotBrain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlotBrain.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +89,7 @@
 				9C5C175B1A2418F300063534 /* Main.storyboard */,
 				9C5C175E1A2418F300063534 /* Images.xcassets */,
 				9C937BE41A2FAF3A00886DD0 /* Factory.swift */,
+				9CD107441A32971800DCD094 /* SlotBrain.swift */,
 				9C5C17601A2418F300063534 /* LaunchScreen.xib */,
 				9C5C17551A2418F300063534 /* Supporting Files */,
 			);
@@ -222,6 +225,7 @@
 				9C5C175A1A2418F300063534 /* ViewController.swift in Sources */,
 				9C937BE31A2FAE3500886DD0 /* Slot.swift in Sources */,
 				9C5C17581A2418F300063534 /* AppDelegate.swift in Sources */,
+				9CD107451A32971800DCD094 /* SlotBrain.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
